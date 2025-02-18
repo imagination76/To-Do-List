@@ -10,8 +10,6 @@ let tasks = [
   { id: 2, title: 'Build a To-Do App', completed: false }
 ];
 
-
-
 // Get all tasks
 app.get('/tasks', (req, res) => {
   res.status(200).json(tasks);
