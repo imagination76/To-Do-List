@@ -25,10 +25,6 @@ app.get('/tasks/:id', (req, res) => {
 });
 
 // Create a new task
-
-
-
-
 app.post('/tasks', (req, res) => {
   const { title, completed } = req.body;
   if (!title) return res.status(400).send('Task title is required');
