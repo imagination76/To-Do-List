@@ -11,10 +11,6 @@ let tasks = [
 ];
 
 // Get all tasks
-
-
-
-
 app.get('/tasks', (req, res) => {
   res.status(200).json(tasks);
 });
